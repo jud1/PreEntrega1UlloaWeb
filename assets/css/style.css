@@ -1,0 +1,16 @@
+html,
+body {
+   width: 100%;
+   overflow-x: hidden;
+}
+
+header {
+   background-color: whitesmoke;
+}
+
+.contenedor {
+   width: 100%;
+   max-width: calc(1110px - 30px);
+   margin: 0 auto;
+   padding: 0 15px;
+}
