@@ -6,28 +6,31 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>JUD Portfolio</title>
    <link rel="stylesheet" href="assets/css/style.css">
+   <script src="assets/js/funciones.js"></script>
 </head>
 <body>
    <!-- Cabecera -->
    <header>
       <div class="contenedor">
-         <a href="#">Logo</a>
+         <a href="index.html">
+            <img src="assets/images/logo-temporal.png" alt="JUD" width="30">
+         </a>
          <nav>
             <ol>
                <li>
-                  <a href="#">Home</a>
+                  <a href="#home_landing" class="" smooth-scroll>Home</a>
                </li>
                <li>
-                  <a href="#">About</a>
+                  <a href="#about_landing" class="" smooth-scroll>About</a>
                </li>
                <li>
-                  <a href="#">Carrer</a>
+                  <a href="#career_landing" class="" smooth-scroll>Career</a>
                </li>
                <li>
-                  <a href="#">Portfolio</a>
+                  <a href="#portfolio_landing" class="" smooth-scroll>Portfolio</a>
                </li>
                <li>
-                  <a href="#">Contact</a>
+                  <a href="#contact_landing" class="" smooth-scroll>Contact</a>
                </li>
             </ol>
          </nav>
@@ -36,28 +39,59 @@
    <!-- Contenido Principal -->
    <main>
       <!-- Seccion 1: Inicio (Home, hero, etc) -->
-      <section>
+      <section id="home_landing">
          <div class="contenedor">
-            <div style="background-color: cornsilk; height: 100vh;"></div>
-            <hr>
-            <div style="background-color: cornsilk; height: 100vh;"></div>
+            <h1>
+               <span>JUD</span>
+               <span class="font-display-type">Portfolio</span>
+            </h1>
+            <div class="paragraph text-center">
+               <p><em>Breve descripción:</em> Lorem, ipsum dolor sit amet <br> <strong>consectetur adipisicing elit</strong>. Alias minus suscipit aperiam dolores corrupti obcaecati nihil natus assumenda</p>
+            </div>
          </div>
       </section>
+      <!-- Seccion 2 -->
+      <section id="about_landing">
+         <div class="contenedor"></div>
+      </section>
+      <!-- Seccion 2 -->
+      <section id="career_landing">
+         <div class="contenedor"></div>
+      </section>
+      <!-- Seccion 2 -->
+      <section id="portfolio_landing">
+         <div class="contenedor"></div>
+      </section>
+      <!-- Seccion 2 -->
+      <section id="contact_landing">
+         <div class="contenedor"></div>
+      </section>
+      <!-- Seccion Placeholder (para testear scroll) -->
+      <section class="placeholder-section"></section>
    </main>
    <!-- Pie de pagina -->
    <footer>
       <div class="contenedor">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quisquam numquam repellat voluptatum aliquid, laborum neque similique nam ducimus ab? Fugiat pariatur quibusdam rerum numquam quam animi quaerat exercitationem quisquam?</p>
+         <div>
+            <p>Todos los derechos: sit amet consectetur adipisicing elit.</p>
+            <p>Commodi quisquam numquam repellat voluptatum aliquid, laborum neque similique nam ducimus ab.</p>
+         </div>
          <nav>
             <ul>
                <li>
-                  <a href="#">Twitter</a>
+                  <a href="#">
+                     <img src="assets/images/svg/icon-linkedin.svg" alt="Linkedin" width="25px">
+                  </a>
                </li>
                <li>
-                  <a href="#">Linkedin</a>
+                  <a href="#">
+                     <img src="assets/images/svg/icon-github.svg" alt="Github" width="25px">
+                  </a>
                </li>
                <li>
-                  <a href="#">Github</a>
+                  <a href="#">
+                     <img src="assets/images/svg/icon-twitter.svg" alt="Twitter" width="25px">
+                  </a>
                </li>
             </ul>
          </nav>
