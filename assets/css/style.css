@@ -1,16 +1,33 @@
 html,
 body {
    width: 100%;
+   height: 100%;
    overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
 }
 
 header {
    background-color: whitesmoke;
+   color: cornsilk;
+}
+
+main {
+   flex: 1;
+}
+
+footer {
+   background-color: slategray;
 }
 
 .contenedor {
-   width: 100%;
-   max-width: calc(1110px - 30px);
+   width: calc(100% - 30px);
+   max-width: 1110px;
    margin: 0 auto;
    padding: 0 15px;
 }
