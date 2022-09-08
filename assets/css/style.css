@@ -21,7 +21,10 @@
    --trans-default: all 300ms ease;
 
    /* Box shadows */
-   --box-s_default: 0 5px 15px rgba(0, 0, 0, 0.08)
+   --box-s_default: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+   /* Spacing */
+   --gutter-s: 2rem;
 }
 
 /* Tags modify */
@@ -40,9 +43,26 @@ body {
    flex-direction: column;
 }
 
+body *{
+   padding: 0;
+   margin: 0;
+}
+
+main {
+   padding-bottom: calc(var(--gutter-s) * 3);
+}
+
+section:not(#home_landing) {
+   padding-top: 5em;
+}
+
 h1, h2, h3 {
    font-family: var(--font-titles);
    font-weight: 700;
+}
+
+img {
+   max-width: 100%;
 }
 
 a {
@@ -55,6 +75,25 @@ a:hover {
 
 li {
    list-style: none;
+}
+
+input[type=text], textarea {
+   width: 100%;
+   padding: 1em;
+   margin: 0;
+   font-family: var(--font-body);
+   border: none;
+   background-color: whitesmoke;
+   color: var(--black-grey);
+   font-size: 1em;
+   resize: none;
+   outline: none;
+   transition: var(--trans-default);
+}
+
+input[type=text]:focus, textarea:focus {
+   background-color: lightgrey;
+   color: black;
 }
 
 /* Utilities */
@@ -71,10 +110,49 @@ li {
 }
 
 .contenedor {
-   width: calc(100% - 2em);
+   width: calc(100% - calc(var(--gutter-s) * 2));
    max-width: 1110px;
    margin: 0 auto;
    padding: 0 1em;
+}
+
+.grilla {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: calc(-1 * var(--gutter-s));
+   width: calc(100% + var(--gutter-s));
+}
+
+.grilla > * {
+   padding-left: var(--gutter-s);
+}
+
+.width-1-2{
+   width: calc(50% - var(--gutter-s));
+}
+
+.width-1-3{
+   width: calc(33.3% - var(--gutter-s));
+}
+
+.width-1-4{
+   width: calc(25% - var(--gutter-s));
+}
+
+.margin-top-xs {
+   margin-top: calc(var(--gutter-s) * 0.5);
+}
+.margin-top-s {
+   margin-top: calc(var(--gutter-s));
+}
+.margin-top-m {
+   margin-top: calc(var(--gutter-s) * 2);
+}
+.margin-top-l {
+   margin-top: calc(var(--gutter-s) * 3);
+}
+.margin-top-xl {
+   margin-top: calc(var(--gutter-s) * 4);
 }
 
 .button-generic {
@@ -128,11 +206,6 @@ header > .contenedor{
    display: flex;
    align-items: center;
    justify-content: space-between;
-}
-
-header nav ol {
-   margin: 0;
-   padding: 0;
 }
 
 header nav ol li {
@@ -219,7 +292,6 @@ main {
    font-size: 8em;
    line-height: 1;
    text-align: center;
-   margin: 0;
 }
 
 #home_landing h1 span:first-child {
@@ -246,6 +318,7 @@ main {
 footer {
    background-color: var(--trypan-blue);
    color: white;
+   padding: 1em 0;
 }
 
 footer > .contenedor{
@@ -257,7 +330,6 @@ footer > .contenedor{
 footer p {
    font-size: 0.875em;
    line-height: 1.2;
-   margin: 0;
    color: var(--blue-crayola);
    font-style: italic;
 }
