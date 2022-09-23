@@ -5,11 +5,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>JUD Portfolio</title>
+   <!-- Boostrap 5.2 -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+   <!-- Estilos del sitio -->
    <link rel="stylesheet" href="assets/css/style.css">
-   <script src="assets/js/funciones.js"></script>
+   <!-- Funciones javascript -->
+   <script src="assets/js/funciones.js" defer></script>
 </head>
 <body>
-   <!-- Cabecera -->
    <header>
       <div class="contenedor">
          <a href="index.html">
@@ -51,15 +55,18 @@
          </div>
       </section>
       <!-- Seccion 2 -->
-      <section id="about_landing">
+      <section id="about_landing" class="wow bounceInUp">
          <div class="contenedor">
-            <h2>About</h2>
+            <h2>
+               About
+               <small>(Flexbox grid)</small>
+            </h2>
             <!-- Grilla superior -->
             <div class="grilla">
-               <figure class="width-1-2">
+               <figure class="width-1-2@m">
                   <img src="assets/images/placeholder.jpg" alt="Jose Ulloa">
                </figure>
-               <div class="width-1-2">
+               <div class="width-1-2@m">
                   <h3>Título acerca de mi</h3>
                   <div class="margin-top-s">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Soluta laboriosam repellat</strong> placeat saepe ducimus dicta impedit? Doloribus ratione ipsa distinctio amet fugiat incidunt dicta laboriosam autem, omnis eos quos veniam?</p>
@@ -70,7 +77,7 @@
             <!-- Grilla inferior -->
             <div class="grilla margin-top-m">
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -78,7 +85,7 @@
                   </dl>
                </div>
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -86,7 +93,7 @@
                   </dl>
                </div>
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -94,7 +101,7 @@
                   </dl>
                </div>
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -102,7 +109,7 @@
                   </dl>
                </div>
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -110,7 +117,7 @@
                   </dl>
                </div>
                <!-- Item about -->
-               <div class="width-1-3">
+               <div class="width-1-3@m width-1-2@s">
                   <i><!-- Icono --></i>
                   <dl>
                      <dt>Lorem ipsum, dolor sit amet</dt>
@@ -121,7 +128,7 @@
          </div>
       </section>
       <!-- Seccion 3 -->
-      <section id="career_landing">
+      <section id="career_landing" class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
          <div class="contenedor">
             <h2>Career</h2>
             <ol class="margin-top-s">
@@ -164,21 +171,21 @@
             </ol>
             <div class="grilla margin-top-m">
                <!-- Item -->
-               <figure class="width-1-3">
+               <figure class="width-1-3@m width-1-2@s">
                   <img src="assets/images/placeholder.jpg" alt="Imagen logro 1">
                   <figcaption class="margin-top-s">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
                   </figcaption>
                </figure>
                <!-- Item -->
-               <figure class="width-1-3">
+               <figure class="width-1-3@m width-1-2@s">
                   <img src="assets/images/placeholder.jpg" alt="Imagen logro 2">
                   <figcaption class="margin-top-s">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
                   </figcaption>
                </figure>
                <!-- Item -->
-               <figure class="width-1-3">
+               <figure class="width-1-3@m width-1-2@s">
                   <img src="assets/images/placeholder.jpg" alt="Imagen logro 2">
                   <figcaption class="margin-top-s">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
@@ -190,67 +197,82 @@
       <!-- Seccion 4 -->
       <section id="portfolio_landing">
          <div class="contenedor">
-            <h2>Portfolio</h2>
-            <div class="grilla margin-top-m">
+            <h2>
+               Portfolio
+               <small>(Grid css + Hover animation)</small>
+            </h2>
+            <div class="grilla-gridcss hover-gallery margin-top-m">
                <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 1">
-                  <div>
-                     <div class="margin-top-xs">
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/500?random=2" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet.</span>
                      </div>
-                  </div>
+                  </figcaption>
                </div>
                <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 2">
-                  <div>
-                     <div class="margin-top-xs">
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/400?random=1" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet.</span>
                      </div>
-                  </div>
+                  </figcaption>
+               </div>
+               
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/400?random=3" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Titulo</h4>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                     </div>
+                  </figcaption>
                </div>
                <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 3">
-                  <div>
-                     <div class="margin-top-xs">
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/400?random=5" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet.</span>
                      </div>
-                  </div>
+                  </figcaption>
                </div>
                <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 4">
-                  <div>
-                     <div class="margin-top-xs">
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/700?random=4" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet.</span>
                      </div>
-                  </div>
+                  </figcaption>
+               </div>
+               
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/500?random=6" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Titulo</h4>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                     </div>
+                  </figcaption>
                </div>
                <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 5">
-                  <div>
-                     <div class="margin-top-xs">
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/400?random=7" alt="Imagen porfolio 1">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <span>Lorem ipsum dolor sit amet.</span>
                      </div>
-                  </div>
-               </div>
-               <!-- Item -->
-               <div class="width-1-3">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 6">
-                  <div>
-                     <div class="margin-top-xs">
-                        <h4>Titulo</h4>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-                     </div>
-                  </div>
+                  </figcaption>
                </div>
             </div>
          </div>
@@ -258,12 +280,15 @@
       <!-- Seccion 5 -->
       <section id="contact_landing">
          <div class="contenedor">
-            <h2>Contact</h2>
-            <div class="grilla margin-top-m">
-               <figure class="width-1-2">
+            <h2>
+               Contact
+               <small>(Bootstrap grid)</small>
+            </h2>
+            <div class="row margin-top-m">
+               <figure class="col-md-6">
                   <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 6">
                </figure>
-               <form action="" class="width-1-2">
+               <form action="" class="col-md-6">
                   <legend>Hablemos</legend>
                   <div class="margin-top-xs">
                      <input type="text" placeholder="Ingresa tu nombre">
