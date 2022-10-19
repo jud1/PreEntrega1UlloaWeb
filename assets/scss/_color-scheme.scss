@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+
+   body {
+      background-color: var(--black-grey);
+      color: var(--white);
+
+      header { 
+         background-color: var(--black-grey);
+      }
+
+      section {
+         h2 {
+            color: var(--white);
+         }
+
+         h3 {
+            color: var(--sea-green-crayola);
+         }
+
+         h4 {
+            color: var(--pacific-blue);
+         }
+      }
+      .button-generic {
+         background-color: var(--sea-green-crayola);
+         color: var(--black-grey);
+         &:hover {
+            color: var(--black-grey);
+            background-color: var(--purple-x-11);
+         }
+      }
+
+      img[src*="placeholder"] {
+         filter: invert(1);
+      }
+   
+      .hover-gallery > *:before {
+         background-color: black;
+      }
+   }
+}

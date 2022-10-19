@@ -1,0 +1,38 @@
+{
+  "name": "preentregaulloa",
+  "version": "1.0.0",
+  "description": "Pre entregas para el curso de Desarrollo Web de Coderhouse, comision 44325 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --output-style compressed --include-path scss assets/scss/root.scss assets/css/style.css --source-map assets/css/style.css.map",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jud1/PreEntrega1Ulloa.git"
+  },
+  "keywords": [
+    "Desarrollo",
+    "web",
+    "frontend",
+    "Jose",
+    "Ulloa",
+    "html",
+    "css",
+    "sass",
+    "scss",
+    "SEO",
+    "uikit"
+  ],
+  "author": "JUD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jud1/PreEntrega1Ulloa/issues"
+  },
+  "homepage": "https://github.com/jud1/PreEntrega1Ulloa#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

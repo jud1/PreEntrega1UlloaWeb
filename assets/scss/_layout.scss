@@ -1,0 +1,71 @@
+.margin {
+   &-top {
+      @each $label, $size in $sizeList {
+         &-#{$label}{
+            margin-top: calc(var(--gutter-s) * #{$size});
+         }
+      }
+   }
+}
+
+.contenedor {
+   width: calc(100%);
+   box-sizing: border-box;
+   max-width: 1180px;
+   margin: 0 auto;
+   padding: 0 var(--gutter-s);
+}
+.grilla {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: calc(var(--gutter-s) * -1);
+   width: calc(100% + var(--gutter-s));
+   // gap: var(--gutter-s);
+   > * {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: calc(var(--gutter-s));
+      margin-top: var(--gutter-s);
+   }
+   &-gridcss {
+      column-count: 3;
+      column-gap: var(--gutter-s);
+      width: 100%;
+      > * {
+         display: grid;
+         grid-template-rows: 1fr auto;
+         break-inside: avoid;
+         margin-bottom: var(--gutter-s);
+         cursor: pointer;
+      }
+      @media screen and (max-width: 959px) {
+         column-count: 2;
+      }
+      @media screen and (max-width: 639px) {
+         column-count: 1;
+      }
+   }
+}
+
+.width {
+   // primer for para recorre el x-t (cantidad sobre total de la grilla)
+   @for $i from 1 through 4 {
+      // segundo para recorrer por el total del la grilla (i-x)
+      @for $t from 1 through 5 {
+         // if para la repeticion (1-1, 2-2, etc)
+         @if $t != $i and $t > $i{
+            &-#{$i}-#{$t}{
+               width: #{(100% / $t) * $i};
+               // each para mobie first por cada width item de la lista
+               @each $mq, $value in $mqList {
+                  @media screen and (min-width: #{$value}px) {
+                     &\@#{$mq}{
+                        width: #{(100% / $t) * $i};
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,116 @@
+header {
+   background-color: var(--white);
+   position: sticky;
+   top: 0;
+   z-index: 99;
+   box-shadow: var(--box-s_default);
+   position: relative;
+  
+}
+
+header a{
+   color: var(--sea-green-crayola);
+}
+
+header > .contenedor{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 64px;
+   box-sizing: border-box;
+}
+
+header nav ol li {
+   display: inline-block;
+   font-size: 1em;
+}
+
+header nav ol li a{
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: var(--blue-crayola);
+   text-decoration: none;
+   letter-spacing: 0.05em;
+   padding: 1.25em 0.5em;
+   transition: var(--trans-default);
+}
+
+@media screen and (min-width: 640px) {
+   header nav ol li a::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 0.3em;
+      background-color: var(--purple-x-11);
+      width: 100%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: var(--trans-default);
+   }
+   
+   header nav ol li a:hover {
+      color: var(--purple-x-11);
+      /* background-color: var(--trypan-blue); */
+   }
+   
+   header nav ol li a:hover::after {
+      opacity: 1;
+   }
+   #mbMenuToggler {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 639px) {
+   header nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white !important;
+   }
+   header nav ol {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   header nav ol li {
+      border-top: 1px solid rgb(117, 117, 117);
+   }
+   header nav ol li:first-child {
+      border: none;
+   }
+   header nav ol li a {
+      width: 100%;
+   }
+   #mbMenuToggler{
+      border: none;
+      border-radius: 0;
+      outline: none;
+      width: 30px;
+      height: 30px;
+      -webkit-appearance: none;
+      cursor: pointer;
+      transition: var(--trans-default);
+      background-image: url(../images/bars.png);
+      background-size: cover;
+   }
+   #mbMenuToggler:checked{
+      background-image: url(../images/close.png);
+   }
+   #mbMenuToggler:checked+nav{
+      display: block;
+      background: white !important;
+   }
+}
+
+@media screen and (max-width: 639px) and (prefers-color-scheme: dark) {
+   #mbMenuToggler:checked+nav{
+      background: #222 !important;
+   }
+}

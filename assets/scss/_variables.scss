@@ -1,0 +1,36 @@
+// Google fonts [Roboto, Oswald]
+@import "https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap";
+
+$mqList: (s:640, m:960, l:1200);
+$sizeList: (xs: 0.5, s: 1, m: 2, l: 3, xl: 4);
+
+$colorList: (
+   "white": #ffffff,
+   "black-grey": #222222,
+   "trypan-blue": #010DB1ff,
+   "blue-crayola": #3D70FDff,
+   "sea-green-crayola": #44F7CDff,
+   "pacific-blue": #34BED8ff,
+   "purple-x-11": #9B40FEff
+);
+
+:root {
+
+   /* Color vars */
+   @each $name, $color in $colorList { --#{$name}: #{$color}; }
+
+   /* Fonts vars */
+   --font-body: 'Roboto', sans-serif;
+   --font-titles: 'Oswald', sans-serif;
+   --font-display: 'Kaushan Script', cursive;
+
+   /* Transitions */
+   --trans-default: all 300ms ease;
+
+   /* Box shadows */
+   --box-s_default: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+   /* Spacing */
+   --gutter-s: 2rem;
+
+}

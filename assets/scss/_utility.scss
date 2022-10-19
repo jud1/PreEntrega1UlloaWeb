@@ -1,0 +1,46 @@
+/* Utilities */
+.font-uppercase {
+   text-transform: uppercase;
+}
+
+.font-display-type {
+   font-family: var(--font-display);
+}
+
+.text-center {
+   text-align: center;
+}
+
+.button-generic {
+   background-color: var(--trypan-blue);
+   cursor: pointer;
+   color: var(--white);
+   outline: none;
+   border: none;
+   text-decoration: none;
+   font-size: 1em;
+   font-family: var(--font-body);
+   font-weight: 700;
+   line-height: 1em;
+   padding: 0.85em 2em;
+   border-radius: 2.5em;
+   transition: var(--trans-default);
+}
+
+.button-generic:hover{
+   background-color: var(--sea-green-crayola);
+   color: var(--trypan-blue);
+}
+
+.button-generic.button-secondary{
+   background-color: var(--sea-green-crayola);
+   color: var(--black-grey);
+}
+
+.button-generic.button-secondary:hover{
+   background-color: var(--pacific-blue);
+}
+
+.placeholder-section {
+   height: 100vh;
+}

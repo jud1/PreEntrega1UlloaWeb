@@ -5,9 +5,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>JUD Portfolio</title>
-   <!-- Boostrap 5.2 -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+   <meta name="description" content="Portafolio Web de Jose Ulloa Diaz, JUD">
+   <meta name="keywords"  content="HTML, CSS, JS, SEO, Front, End, desarrollo web, portafolio, JUD, React, Hosting, Dominio, Domain, developer, dev">
+   <link rel="preconnect" href="https://fonts.googleapis.com/">
    <!-- Estilos del sitio -->
    <link rel="stylesheet" href="assets/css/style.css">
    <!-- Funciones javascript -->
@@ -17,9 +17,9 @@
    <header>
       <div class="contenedor">
          <a href="index.html">
-            <img src="assets/images/logo-temporal.png" alt="JUD" width="30">
+            <img src="assets/images/logo-temporal.png" alt="JUD" width="30" height="34">
          </a>
-         <input id="mbMenuToggler" class="d-block d-sm-none" type="checkbox">
+         <input id="mbMenuToggler" type="checkbox">
          <nav id="mainNavigation">
             <ol>
                <li>
@@ -50,25 +50,22 @@
                <span>JUD</span>
                <span class="font-display-type">Portfolio</span>
             </h1>
-            <div class="paragraph text-center">
-               <p><em>Breve descripción:</em> Lorem, ipsum dolor sit amet <br> <strong>consectetur adipisicing elit</strong>. Alias minus suscipit aperiam dolores corrupti obcaecati nihil natus assumenda</p>
-            </div>
+            <h2 class="margin-top-xs text-center">
+               <em>Breve descripción:</em> Lorem, ipsum dolor sit amet <br> <strong>consectetur adipisicing elit</strong>. Alias minus suscipit aperiam dolores corrupti obcaecati nihil natus assumenda
+            </h2>
          </div>
       </section>
       <!-- Seccion 2 -->
-      <section id="about_landing" class="wow bounceInUp">
+      <section id="about_landing">
          <div class="contenedor">
-            <h2>
-               About
-               <small>(Flexbox grid)</small>
-            </h2>
+            <h3>About</h3>
             <!-- Grilla superior -->
             <div class="grilla">
                <figure class="width-1-2@m">
-                  <img src="assets/images/placeholder.jpg" alt="Jose Ulloa">
+                  <img src="assets/images/placeholder.jpg" alt="Jose Ulloa" width="542" height="366">
                </figure>
                <div class="width-1-2@m">
-                  <h3>Título acerca de mi</h3>
+                  <h4>Título acerca de mi</h4>
                   <div class="margin-top-s">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Soluta laboriosam repellat</strong> placeat saepe ducimus dicta impedit? Doloribus ratione ipsa distinctio amet fugiat incidunt dicta laboriosam autem, omnis eos quos veniam?</p>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Soluta laboriosam repellat</em> placeat saepe ducimus dicta impedit? Doloribus ratione ipsa distinctio amet fugiat incidunt dicta laboriosam autem, omnis eos quos veniam?</p>
@@ -129,9 +126,9 @@
          </div>
       </section>
       <!-- Seccion 3 -->
-      <section id="career_landing" class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+      <section id="career_landing">
          <div class="contenedor">
-            <h2>Career</h2>
+            <h3>Career</h3>
             <ol class="margin-top-s">
                <li class="margin-top-s">
                   <div>
@@ -170,42 +167,16 @@
                   </div>
                </li>
             </ol>
-            <div class="grilla margin-top-m">
-               <!-- Item -->
-               <figure class="width-1-3@m width-1-2@s">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen logro 1">
-                  <figcaption class="margin-top-s">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
-                  </figcaption>
-               </figure>
-               <!-- Item -->
-               <figure class="width-1-3@m width-1-2@s">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen logro 2">
-                  <figcaption class="margin-top-s">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
-                  </figcaption>
-               </figure>
-               <!-- Item -->
-               <figure class="width-1-3@m width-1-2@s">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen logro 2">
-                  <figcaption class="margin-top-s">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo odit, molestias quod quaerat voluptate praesentium eligendi veniam unde minima enim quis nobis in cupiditate? Repudiandae illo quisquam quasi?</p>
-                  </figcaption>
-               </figure>
-            </div>
          </div>
       </section>
       <!-- Seccion 4 -->
       <section id="portfolio_landing">
          <div class="contenedor">
-            <h2>
-               Portfolio
-               <small>(Grid css + Hover animation)</small>
-            </h2>
-            <div class="grilla-gridcss hover-gallery margin-top-m">
+            <h3>Portfolio</h3>
+            <div class="grilla-gridcss hover-gallery margin-top-s">
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/500?random=2" alt="Imagen porfolio 1">
+                  <img src="https://picsum.photos/600/500?random=2" alt="Imagen porfolio 1" width="600" height="500">
                   <figcaption>
                      <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
@@ -215,38 +186,7 @@
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=1" alt="Imagen porfolio 1">
-                  <figcaption>
-                     <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
-                     </div>
-                  </figcaption>
-               </div>
-               
-               <!-- Item -->
-               <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=3" alt="Imagen porfolio 1">
-                  <figcaption>
-                     <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
-                     </div>
-                  </figcaption>
-               </div>
-               <!-- Item -->
-               <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=5" alt="Imagen porfolio 1">
-                  <figcaption>
-                     <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
-                     </div>
-                  </figcaption>
-               </div>
-               <!-- Item -->
-               <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/700?random=4" alt="Imagen porfolio 1">
+                  <img src="https://picsum.photos/600/400?random=1" alt="Imagen porfolio 2" width="600" height="400">
                   <figcaption>
                      <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
@@ -257,7 +197,7 @@
                
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/500?random=6" alt="Imagen porfolio 1">
+                  <img src="https://picsum.photos/600/400?random=3" alt="Imagen porfolio 3" width="600" height="400">
                   <figcaption>
                      <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
@@ -267,7 +207,38 @@
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=7" alt="Imagen porfolio 1">
+                  <img src="https://picsum.photos/600/400?random=5" alt="Imagen porfolio 4" width="600" height="400">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Titulo</h4>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                     </div>
+                  </figcaption>
+               </div>
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/700?random=4" alt="Imagen porfolio 5" width="600" height="700">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Titulo</h4>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                     </div>
+                  </figcaption>
+               </div>
+               
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/500?random=6" alt="Imagen porfolio 6" width="600" height="500">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Titulo</h4>
+                        <span>Lorem ipsum dolor sit amet.</span>
+                     </div>
+                  </figcaption>
+               </div>
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="https://picsum.photos/600/400?random=7" alt="Imagen porfolio 7" width="600" height="400">
                   <figcaption>
                      <div class="margin-top-xs text-center">
                         <h4>Titulo</h4>
@@ -281,15 +252,12 @@
       <!-- Seccion 5 -->
       <section id="contact_landing">
          <div class="contenedor">
-            <h2>
-               Contact
-               <small>(Bootstrap grid)</small>
-            </h2>
-            <div class="row margin-top-m">
-               <figure class="col-md-6">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen porfolio 6">
+            <h3>Contact</h3>
+            <div class="grilla">
+               <figure class="width-1-2@s">
+                  <img src="assets/images/placeholder.jpg" alt="Imagen contacto">
                </figure>
-               <form action="" class="col-md-6">
+               <form action="" class="width-1-2@s">
                   <legend>Hablemos</legend>
                   <div class="margin-top-xs">
                      <input type="text" placeholder="Ingresa tu nombre">
@@ -310,8 +278,6 @@
             </div>
          </div>
       </section>
-      <!-- Seccion Placeholder (para testear scroll) inactiva -->
-      <!-- <section class="placeholder-section"></section> -->
    </main>
    <!-- Pie de pagina -->
    <footer>
@@ -324,20 +290,14 @@
             <ul>
                <li>
                   <a href="https://www.linkedin.com/in/jud-developer/" target="_blank">
-                     <img src="assets/images/svg/icon-linkedin.svg" alt="Linkedin" width="25px">
+                     <img src="assets/images/svg/icon-linkedin.svg" alt="Linkedin" width="25px" height="25">
                   </a>
                </li>
                <li>
                   <a href="https://github.com/jud1" target="_blank">
-                     <img src="assets/images/svg/icon-github.svg" alt="Github" width="25px">
+                     <img src="assets/images/svg/icon-github.svg" alt="Github" width="25px" height="25">
                   </a>
                </li>
-               <!-- No creado aún -->
-               <!-- <li>
-                  <a href="#" target="_blank">
-                     <img src="assets/images/svg/icon-twitter.svg" alt="Twitter" width="25px">
-                  </a>
-               </li> -->
             </ul>
          </nav>
       </div>
