@@ -8,37 +8,45 @@
    <meta name="description" content="Portafolio Web de Jose Ulloa Diaz, JUD">
    <meta name="keywords"  content="HTML, CSS, JS, SEO, Front, End, desarrollo web, portafolio, JUD, React, Hosting, Dominio, Domain, developer, dev">
    <link rel="preconnect" href="https://fonts.googleapis.com/">
+   <!-- Framework de css: UIKIT -->
+   <!-- UIkit CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+   <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
    <!-- Estilos del sitio -->
    <link rel="stylesheet" href="assets/css/style.css">
    <!-- Funciones javascript -->
    <script src="assets/js/funciones.js" defer></script>
 </head>
 <body>
-   <header>
+   <header uk-navbar="mode: click" uk-sticky>
       <div class="contenedor">
          <a href="index.html">
             <img src="assets/images/logo-temporal.png" alt="JUD" width="30" height="34">
          </a>
-         <input id="mbMenuToggler" type="checkbox">
-         <nav id="mainNavigation">
-            <ol>
-               <li>
-                  <a href="#home_landing" class="" smooth-scroll>Home</a>
-               </li>
-               <li>
-                  <a href="#about_landing" class="" smooth-scroll>About</a>
-               </li>
-               <li>
-                  <a href="#career_landing" class="" smooth-scroll>Career</a>
-               </li>
-               <li>
-                  <a href="#portfolio_landing" class="" smooth-scroll>Portfolio</a>
-               </li>
-               <li>
-                  <a href="#contact_landing" class="" smooth-scroll>Contact</a>
-               </li>
-            </ol>
-         </nav>
+         <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+            <div class="uk-navbar-dropdown">
+               <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active">
+                     <a href="#home_landing" uk-scroll>Inicio</a>
+                  </li>
+                  <li>
+                     <a href="#about_landing" uk-scroll>JUD</a>
+                  </li>
+                  <li>
+                     <a href="#career_landing" uk-scroll>Carrera</a>
+                  </li>
+                  <li>
+                     <a href="#portfolio_landing" uk-scroll>Portafolio</a>
+                  </li>
+                  <li>
+                     <a href="#contact_landing" uk-scroll>Contacto</a>
+                  </li>
+               </ul>
+            </div>
+        </div>
       </div>
    </header>
    <!-- Contenido Principal -->
@@ -51,75 +59,85 @@
                <span class="font-display-type">Portfolio</span>
             </h1>
             <h2 class="margin-top-xs text-center">
-               <em>Breve descripción:</em> Lorem, ipsum dolor sit amet <br> <strong>consectetur adipisicing elit</strong>. Alias minus suscipit aperiam dolores corrupti obcaecati nihil natus assumenda
+               <em>José Ulloa Díaz:</em> Desarrollador Web (Frontend Developer) enfocado en Desarrollo de sitios, Aplicaciones Web y mantención de Ecommerce
             </h2>
          </div>
       </section>
       <!-- Seccion 2 -->
       <section id="about_landing">
          <div class="contenedor">
-            <h3>About</h3>
             <!-- Grilla superior -->
-            <div class="grilla">
-               <figure class="width-1-2@m">
-                  <img src="assets/images/placeholder.jpg" alt="Jose Ulloa" width="542" height="366">
+            <div class="grilla uk-flex-middle">
+               <figure class="width-1-2@m text-center">
+                  <img class="uk-border-circle" src="assets/images/avatar.png" alt="José Ulloa Díaz" width="300" height="320">
                </figure>
                <div class="width-1-2@m">
-                  <h4>Título acerca de mi</h4>
+                  <h4>Más de 6 años en el Desarrollo Web</h4>
                   <div class="margin-top-s">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Soluta laboriosam repellat</strong> placeat saepe ducimus dicta impedit? Doloribus ratione ipsa distinctio amet fugiat incidunt dicta laboriosam autem, omnis eos quos veniam?</p>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Soluta laboriosam repellat</em> placeat saepe ducimus dicta impedit? Doloribus ratione ipsa distinctio amet fugiat incidunt dicta laboriosam autem, omnis eos quos veniam?</p>
+                     <p>Titulado de Diseño Gráfico, desde el comienzo de mi carrera tuve una inclinación por el Desarrollo Web. Comencé con un aprendizaje autodidacta y creando mis primero proyectos básicos con HTML y CSS más un poco de Javascript y amedida de que ganaba experiencia empecé a tomar diferentes cursos en distintas plataformas como Platzi, Udemy, etc; sobre Javascript, Boostrap, Wordpress, Sass, Node básico, entre muchos otros. Al día de hoy me encuentro cursando una carrera de Full Stack Developer para afiatar un poco más mis conocimientos en el área.</p>
                   </div>
                </div>
             </div>
             <!-- Grilla inferior -->
             <div class="grilla margin-top-m">
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/logo-duoc.png" class="uk-border-circle" width="70" height="70" alt="Duoc UC">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Diseño Gráfico: Duoc UC</dt>
+                     <dd>Cursé mis estudios superiores desde el año 2009 al 2014. Desde ya los inicios de mis comencé a explorar en el mundo del Desarrollo Web gracias a las asignaturas que tenía mi carrera sobre ellos.</dd>
                   </dl>
                </div>
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/logo-platzi.png" class="uk-border-circle" width="70" height="70" alt="Platzi">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Desarrollo Web: Platzi</dt>
+                     <dd>Una vez egresado de mis estudios tomé cursos en esta plataforma para aprender lo básico del Front End. La utilicé de manera intermitente adquiriendo lo que necesitaba aprender a medida que iba aprendiendo en la práctica.</dd>
                   </dl>
                </div>
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/notebook.png" class="uk-border-circle" width="93" height="70" alt="Herramientas de desarrollo">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Herramientas de desarrollo (Autodidacta)</dt>
+                     <dd>Paralelamente también fui explorando otras herramientas que me ayudaron en el desarrollo de mi carrera profesional. Git, Sass y Gulp fueron unas de estas.</dd>
                   </dl>
                </div>
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/logo-udemy.png" class="uk-border-circle" width="70" height="70" alt="Udemy">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Javascript / ES6 (Udemy)</dt>
+                     <dd>Siempre he tenido un gusto por programar en este lenguaje así que mientras lo iba necesitando iba aprendiendo lo que podía sobre Javascript y no fue hasta hace poco que decidí dar el paso de hacer un curso completo sobre este.</dd>
                   </dl>
                </div>
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/notebook.png" class="uk-border-circle" width="93" height="70" alt="Pug/Jade">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Pug/Jade (Autodidacta)</dt>
+                     <dd>Mientras trabajaba en agencias decidí ordenar un poco más mi metodología de trabajo y como no tenia la posibilidad (aún) de trabajar con Webpack o algún framework de Javascript, Pug fue la herramienta que me cumplió con esa carencia.</dd>
                   </dl>
                </div>
-               <!-- Item about -->
-               <div class="width-1-3@m width-1-2@s">
-                  <i><!-- Icono --></i>
+               <!-- Item -->
+               <div class="width-1-3@m width-1-2@s" uk-margin="margin: margin-top-xs">
+                  <figure>
+                     <img src="assets/images/logo-coderhouse.jpg" class="uk-border-circle" width="70" height="70" alt="Coderhouse">
+                  </figure>
                   <dl>
-                     <dt>Lorem ipsum, dolor sit amet</dt>
-                     <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veritatis voluptas eos adipisci non, alias porro voluptates minima maxime iste facilis, reiciendis doloremque id explicabo debitis modi obcaecati, recusandae numquam.</dd>
+                     <dt>Desarrollo Fullstack (Coderhouse)</dt>
+                     <dd>Actualmente me encuentro cursando una serie de cursos que conforman una carrera de Desarrollo Full Stack con el fin de formalizar mis conocimientos y encaminarme más en el desarrollo de aplicaciones modernas en Javascript.</dd>
                   </dl>
                </div>
             </div>
@@ -128,42 +146,49 @@
       <!-- Seccion 3 -->
       <section id="career_landing">
          <div class="contenedor">
-            <h3>Career</h3>
+            <h3>Carrera</h3>
             <ol class="margin-top-s">
                <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
+                  <div class="uk-card uk-card-default uk-card-body" uk-margin="margin: margin-top-xs">
+                     <h4>Varios proyectos Freelance</h4>
+                     <span class="uk-display-block">2014 - 2015</span>
+                     <div>
+                        <span class="uk-label">Frontend</span>
+                     </div>
                   </div>
                </li>
                <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
+                  <div class="uk-card uk-card-default uk-card-body" uk-margin="margin: margin-top-xs">
+                     <h4>Ripley.cl / simple.ripley.cl</h4>
+                     <span class="uk-display-block">Dic 2015 - May 2017</span>
+                     <div>
+                        <span class="uk-label">Frontend</span>
+                        <span class="uk-label">Ecommerce</span>
+                        <span class="uk-label">Mantención</span>
+                     </div>
                   </div>
                </li>
                <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
+                  <div class="uk-card uk-card-default uk-card-body" uk-margin="margin: margin-top-xs">
+                     <h4>AvalanchaStudio</h4>
+                     <span class="uk-display-block">May 2017 - Abr 2022</span>
+                     <div>
+                        <span class="uk-label">Frontend</span>
+                        <span class="uk-label">Ecommerce</span>
+                        <span class="uk-label">Mailing</span>
+                     </div>
                   </div>
                </li>
                <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
-                  </div>
-               </li>
-               <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
-                  </div>
-               </li>
-               <li class="margin-top-s">
-                  <div>
-                     <h4>Lorem ipsum dolor sit (2022- 2023)</h4>
-                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam culpa velit voluptatum illum corrupti cupiditate optio officiis facilis molestiae nam, libero, beatae magnam fugiat iusto nihil quidem id tempore dignissimos.</div>
+                  <div class="uk-card uk-card-default uk-card-body" uk-margin="margin: margin-top-xs">
+                     <h4>Entel Empresas</h4>
+                     <span class="uk-display-block">Abr 2022 - Actual</span>
+                     <div>
+                        <span class="uk-label">Frontend</span>
+                        <span class="uk-label">Ecommerce</span>
+                        <span class="uk-label">Mailing</span>
+                        <span class="uk-label">Mantención</span>
+                     </div>
                   </div>
                </li>
             </ol>
@@ -172,77 +197,64 @@
       <!-- Seccion 4 -->
       <section id="portfolio_landing">
          <div class="contenedor">
-            <h3>Portfolio</h3>
+            <h3>Portafolio</h3>
             <div class="grilla-gridcss hover-gallery margin-top-s">
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/500?random=2" alt="Imagen porfolio 1" width="600" height="500">
+                  <img src="assets/images/portafolio-avalanchastudio.png" alt="AvalanchaStudio" width="1280" height="993">
                   <figcaption>
                      <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <h4>AvalanchaStudio</h4>
+                        <a href="https://avalanchastudio.com/" target="_blank" class="uk-display-inline-block">Ir al sitio <i uk-icon="icon: arrow-right"></i></a>
                      </div>
                   </figcaption>
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=1" alt="Imagen porfolio 2" width="600" height="400">
+                  <img src="assets/images/portafolio-dm.png" alt="Digital Market" width="1280" height="720">
                   <figcaption>
                      <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
-                     </div>
-                  </figcaption>
-               </div>
-               
-               <!-- Item -->
-               <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=3" alt="Imagen porfolio 3" width="600" height="400">
-                  <figcaption>
-                     <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <h4>Digital Market</h4>
+                        <a href="https://www.entel.cl/empresas/digitalmarket/" target="_blank" class="uk-display-inline-block">Ir al sitio <i uk-icon="icon: arrow-right"></i></a>
                      </div>
                   </figcaption>
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=5" alt="Imagen porfolio 4" width="600" height="400">
+                  <img src="assets/images/portafolio-torre.png" alt="Torre.cl" width="1280" height="858">
                   <figcaption>
                      <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <h4>Torre.cl</h4>
+                        <a href="https://torre.cl/" target="_blank" class="uk-display-inline-block">Ir al sitio <i uk-icon="icon: arrow-right"></i></a>
                      </div>
                   </figcaption>
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/700?random=4" alt="Imagen porfolio 5" width="600" height="700">
+                  <img src="assets/images/portafolio-thebodyshop.png" alt="TheBodyShop" width="1280" height="1186">
                   <figcaption>
                      <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
-                     </div>
-                  </figcaption>
-               </div>
-               
-               <!-- Item -->
-               <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/500?random=6" alt="Imagen porfolio 6" width="600" height="500">
-                  <figcaption>
-                     <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <h4>TheBodyShop</h4>
+                        <a href="https://thebodyshop.cl/" target="_blank" class="uk-display-inline-block">Ir al sitio <i uk-icon="icon: arrow-right"></i></a>
                      </div>
                   </figcaption>
                </div>
                <!-- Item -->
                <div class="hover-reveal">
-                  <img src="https://picsum.photos/600/400?random=7" alt="Imagen porfolio 7" width="600" height="400">
+                  <img src="assets/images/portafolio-divisas.png" alt="Conversor de divisas" width="1280" height="721">
                   <figcaption>
                      <div class="margin-top-xs text-center">
-                        <h4>Titulo</h4>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <h4>Conversor de divisas</h4>
+                     </div>
+                  </figcaption>
+               </div>   
+               <!-- Item -->
+               <div class="hover-reveal">
+                  <img src="assets/images/portafolio-austral.png" alt="Cerveza Austral" width="1280" height="852">
+                  <figcaption>
+                     <div class="margin-top-xs text-center">
+                        <h4>Cerveza Austral</h4>
+                        <a href="https://cervezaaustral.cl/" target="_blank" class="uk-display-inline-block">Ir al sitio <i uk-icon="icon: arrow-right"></i></a>
                      </div>
                   </figcaption>
                </div>
@@ -252,55 +264,55 @@
       <!-- Seccion 5 -->
       <section id="contact_landing">
          <div class="contenedor">
-            <h3>Contact</h3>
-            <div class="grilla">
+            <h3>¡Hablemos!</h3>
+            <div class="grilla uk-flex-middle">
                <figure class="width-1-2@s">
-                  <img src="assets/images/placeholder.jpg" alt="Imagen contacto">
+                  <img src="assets/images/form.png" alt="Imagen contacto" width="1000" height="750">
                </figure>
-               <form action="" class="width-1-2@s">
-                  <legend>Hablemos</legend>
-                  <div class="margin-top-xs">
-                     <input type="text" placeholder="Ingresa tu nombre">
-                  </div>
-                  <div class="margin-top-xs">
-                     <input type="text" placeholder="Ingresa tu Email">
-                  </div>
-                  <div class="margin-top-xs">
-                     <input type="text" placeholder="Ingresa tu Teléfono">
-                  </div>
-                  <div class="margin-top-xs">
-                     <textarea placeholder="Ingresa un mensaje"></textarea>
-                  </div>
-                  <div class="margin-top-xs">
-                     <input type="submit" value="Enviar" class="button-generic">
+               <form action="" class="width-1-2@s" uk-slider="draggable: false; clsActivated: uk-transition-active; velocity: 2">
+                  <div style="overflow: hidden">
+                     <ul class="uk-slider-items uk-child-width-1-1">
+                        <li class="uk-flex uk-flex-column uk-flex-center">
+                           <input type="text" placeholder="Ingresa tu nombre" class="uk-transition-slide-bottom-small">
+                           <div class="actions margin-top-s uk-transition-slide-bottom-small" class="">
+                              <div class="width-1-1">
+                                 <button type="button" class="button-generic" uk-slider-item="next">Siguiente</button>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="uk-flex uk-flex-column uk-flex-center">
+                           <input type="email" placeholder="Ingresa tu Email" class="uk-transition-slide-bottom-small">
+                           <div class="actions margin-top-s uk-transition-slide-bottom-small">
+                              <button type="button">
+                                 <i uk-icon="icon: arrow-left" uk-slider-item="previous"></i>
+                              </button>
+                              <button type="button" class="button-generic" uk-slider-item="next">Siguiente</button>
+                           </div>
+                        </li>
+                        <li class="uk-flex uk-flex-column uk-flex-center">
+                           <input type="tel" placeholder="Ingresa tu Teléfono" class="uk-transition-slide-bottom-small">
+                           <div class="actions margin-top-s uk-transition-slide-bottom-small">
+                              <button type="button">
+                                 <i uk-icon="icon: arrow-left" uk-slider-item="previous"></i>
+                              </button>
+                              <button type="button" class="button-generic" uk-slider-item="next">Siguiente</button>
+                           </div>
+                        </li>
+                        <li class="uk-flex uk-flex-column uk-flex-center">
+                           <textarea placeholder="Ingresa un mensaje" class="uk-transition-slide-bottom-small" rows="10"></textarea>
+                           <div class="actions margin-top-s uk-transition-slide-bottom-small">
+                              <button type="button">
+                                 <i uk-icon="icon: arrow-left" uk-slider-item="previous"></i>
+                              </button>
+                              <input type="submit" value="Enviar" class="button-generic">
+                           </div>
+                        </li>
+                     </ul>
                   </div>
                </form>
             </div>
          </div>
       </section>
    </main>
-   <!-- Pie de pagina -->
-   <footer>
-      <div class="contenedor">
-         <div>
-            <p>Todos los derechos: sit amet consectetur adipisicing elit.</p>
-            <p>Commodi quisquam numquam repellat voluptatum aliquid, laborum neque similique nam ducimus ab.</p>
-         </div>
-         <nav>
-            <ul>
-               <li>
-                  <a href="https://www.linkedin.com/in/jud-developer/" target="_blank">
-                     <img src="assets/images/svg/icon-linkedin.svg" alt="Linkedin" width="25px" height="25">
-                  </a>
-               </li>
-               <li>
-                  <a href="https://github.com/jud1" target="_blank">
-                     <img src="assets/images/svg/icon-github.svg" alt="Github" width="25px" height="25">
-                  </a>
-               </li>
-            </ul>
-         </nav>
-      </div>
-   </footer>
 </body>
 </html>

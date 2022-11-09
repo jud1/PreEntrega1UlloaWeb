@@ -14,12 +14,8 @@
       transition: var(--trans-default);
    }
    &:hover {
-      filter: grayscale(1);
       &:before {
-         opacity: 0.8;
-      }
-      img {
-         filter: blur(3px);
+         opacity: 0.9;
       }
       figcaption {
          opacity: 1;

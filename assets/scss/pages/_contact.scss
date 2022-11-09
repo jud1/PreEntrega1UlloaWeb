@@ -1,0 +1,14 @@
+#contact_landing {
+   .actions {
+      display: flex;
+      //flex-wrap: wrap;
+      justify-content: space-between;
+      *:only-child{
+         width: 100%;
+         text-align: right;
+         *{
+            width: auto;
+         }
+      }
+   }
+}

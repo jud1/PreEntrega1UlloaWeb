@@ -88,25 +88,6 @@ header nav ol li a{
    header nav ol li a {
       width: 100%;
    }
-   #mbMenuToggler{
-      border: none;
-      border-radius: 0;
-      outline: none;
-      width: 30px;
-      height: 30px;
-      -webkit-appearance: none;
-      cursor: pointer;
-      transition: var(--trans-default);
-      background-image: url(../images/bars.png);
-      background-size: cover;
-   }
-   #mbMenuToggler:checked{
-      background-image: url(../images/close.png);
-   }
-   #mbMenuToggler:checked+nav{
-      display: block;
-      background: white !important;
-   }
 }
 
 @media screen and (max-width: 639px) and (prefers-color-scheme: dark) {
